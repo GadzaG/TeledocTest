@@ -18,10 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\TeledocTest.Application\TeledocTest.Application.csproj" />
+    <ProjectReference Include="..\TeledocTest.Core\TeledocTest.Core.csproj" />
     <ProjectReference Include="..\TeledocTest.DataAccess\TeledocTest.DataAccess.csproj" />
   </ItemGroup>
 

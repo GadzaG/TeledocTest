@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeledocTest.Core", "Teledoc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeledocTest.DataAccess", "TeledocTest.DataAccess\TeledocTest.DataAccess.csproj", "{143D3CA9-9A36-4C22-9B6E-5516484C574C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeledocTest.Application", "TeledocTest.Application\TeledocTest.Application.csproj", "{36567550-8AAD-4EC2-B6A7-50F60A530142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{143D3CA9-9A36-4C22-9B6E-5516484C574C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143D3CA9-9A36-4C22-9B6E-5516484C574C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143D3CA9-9A36-4C22-9B6E-5516484C574C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36567550-8AAD-4EC2-B6A7-50F60A530142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36567550-8AAD-4EC2-B6A7-50F60A530142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36567550-8AAD-4EC2-B6A7-50F60A530142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36567550-8AAD-4EC2-B6A7-50F60A530142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

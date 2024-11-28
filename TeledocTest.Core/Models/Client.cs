@@ -1,7 +1,5 @@
 ﻿namespace TeledocTest.Core.Models
 {
-    
-    
     public class Client
     {
         public const int MAX_UL_INN_LENGHT = 10;
@@ -28,25 +26,30 @@
             Founders = founders;
         }
 
-        public static (Client Client, string Error) Create(Guid id, string inn, string title, Type type, List<Founder> founders)
+        public static Client? Create(Guid id, string inn, string title, Type type, List<Founder> founders)
         {
-            string error = string.Empty;
+            Client? client = null;
 
 
             if (founders.Count == 0)
             {
-                error = "нельзя создать клиента, без учередителя";
+                return client;
             }
             if (type == Type.IP)
             {
                 if (founders.Count > 1)
                 {
-                    error = "у ИП должен быть только один учередитель";
+                    return client;
                 }
             }
-            var client = new Client(id, inn, title, type, founders);
+            if (inn.Length != 11 || inn.Length != 12)
+            {
+                return client;
+            }
 
-            return (client, error);
+            client = new Client(id, inn, title, type, founders);
+
+            return client;
         }
     }
 

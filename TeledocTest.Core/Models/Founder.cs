@@ -10,9 +10,20 @@
 
         public string INN { get; } = string.Empty;
 
-        private Founder() 
+        private Founder(Guid id, string firstName, string lastName, string inn) 
         {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            INN = inn;
+        }
+
+        public static (Founder Founder, string Error) Create(Guid id, string firstName, string lastName, string inn)
+        {
+            string error = string.Empty;
+            var founder = new Founder(id, firstName, lastName, inn);
             
+            return (founder, error);
         }
     }
 }
